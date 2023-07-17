@@ -27,19 +27,19 @@ Pipeline for analyzing tracking videos
 	- Will need to have the EXACT same variable names at the top of the Excel sheet
 
 1. Need to downsample the video (speeds up analysis significantly and has no loss of accuracy)
-	a) Open MovieResize.m
-	b) Change rows 3-8 to match your requirements (between CHANGE ME)
+	1. Open MovieResize.m
+	2. Change rows 3-8 to match your requirements (between CHANGE ME)
 		- These select the file path to the video, the Excel sheet, and the Excel rows to analyze in the spreadsheet
 		- There is also a toggle to change the frame rate (1 is on, 0 is off) and what to set the frame rate to.
 		- Shrink factor reduces each video dimension by that amount. If shrink factor = 4, then 1920 x 1080 becomes 480 x 270
-	c) I recommend reducing videos to be 480 x 270 and 15 fps for faster analysis. Can view this by right clicking video > "Properties" > "Details"
+	3. I recommend reducing videos to be 480 x 270 and 15 fps for faster analysis. Can view this by right clicking video > "Properties" > "Details"
 
 2. Select video start and end frames
-	a) In Matlab click the apps tab, open Video Viewer (under image processing and computer vision)
-	b) Open your REDUCED video in Video Viewer
-	c) Find the start frame to put in the Excel spreadsheet (arrow keys to go through frames, displayed in bottom right)
-	d) End frame will be 2699 frames later (3 minutes at 15 fps = 2700 frames, but start and end frame both count, so subtract 1)
-	e) Don't have any end frames where your hand/shadows enter into the arena. Shouldn't happen, but may have to pick an earlier end frame to avoid
+	1. In Matlab click the apps tab, open Video Viewer (under image processing and computer vision)
+	2. Open your REDUCED video in Video Viewer
+	3. Find the start frame to put in the Excel spreadsheet (arrow keys to go through frames, displayed in bottom right)
+	4. End frame will be 2699 frames later (3 minutes at 15 fps = 2700 frames, but start and end frame both count, so subtract 1)
+	5. Don't have any end frames where your hand/shadows enter into the arena. Shouldn't happen, but may have to pick an earlier end frame to avoid
 
 3. Preparing the main script
 	a) Open Track_Master. This script will call the functions: Track_Coords and Track_Master
