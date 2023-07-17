@@ -3,7 +3,7 @@ Mouse tracking code developed in the Jones and Maganti Labs
 
 Hello! Welcome to the README for the mouse tracking scripts. This will explain the expectations for data being read into these scripts
 and how to use them correcty. Feel free to reach me at djlasky@ucdavis.edu or dannyjlasky@gmail.com if you require necessary assistance.
-- Danny Lasky, 2023
+Danny Lasky, 2023
 
 Matlab basics
 - I strongly recommend taking Matlab Onramp, a free online 2-hour course, before using the script at all
