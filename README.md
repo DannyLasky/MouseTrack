@@ -1,5 +1,5 @@
 # MouseTrack
-Mouse tracking code developed in the Jones and Maganti Labs
+## Mouse tracking code developed in the Jones and Maganti Labs
 
 Hello! Welcome to the README for the mouse tracking scripts. This will explain the expectations for data being read into these scripts
 and how to use them correcty. Feel free to reach me at djlasky@ucdavis.edu or dannyjlasky@gmail.com if you require necessary assistance.
@@ -41,7 +41,7 @@ Danny Lasky, 2023
 	4. End frame will be 2699 frames later (3 minutes at 15 fps = 2700 frames, but start and end frame both count, so subtract 1)
 	5. Don't have any end frames where your hand/shadows enter into the arena. Shouldn't happen, but may have to pick an earlier end frame to avoid
 
-3. Preparing the main script
+**3. Preparing the main script**
 	1. Open Track_Master. This script will call the functions: Track_Coords and Track_Master
 	2. Set the Excel name, Excel rows to be run, and directory pathes
 	3. Have readCoords = 0 if setting coordinates for the first time, otherwise have readCoords = 1 to read them in automatically
@@ -52,7 +52,7 @@ Danny Lasky, 2023
 		to the Excel sheet too, which helps you keep track of what version your data was run on. These variables actively affect others.
 		If the wall length changes, it's important that it's changed in the script!
 
-4. Running the main script
+**4. Running the main script**
 	1. CLOSE THE EXCEL SHEET (Otherwise output can not be saved there and you'll get an error)
 	2. If readCoords = 0, you will be prompted to set the coordinates. If readCoords = 1 it will read them directly from the spreadsheet (assuming
 		that they've been previously set, otherwise you'll get an error).
@@ -64,7 +64,7 @@ Danny Lasky, 2023
 	5. You should get a heatmap showing where the mouse spent time, a trajectory path of the mouse, a double-speed, low resolution video of the tracking,
 		a statistics dashboard, and a Matlab output with statistics.
 
-5. Creating group statisitics to compare treatments
+**5. Creating group statisitics to compare treatments**
 	1. Can do this directly through Excel or by using the Tracking_Stats_Function. This was not written by me, but works well for viewing different
 		statisitcs like distance traveled and time near objects for your selected groups.
 
