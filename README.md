@@ -3,6 +3,7 @@
 
 Hello! Welcome to the README for the mouse tracking scripts. This will explain the expectations for data being read into these scripts
 and how to use them correcty. Feel free to reach me at djlasky@ucdavis.edu or dannyjlasky@gmail.com if you require necessary assistance.
+
 Danny Lasky, 2023
 
 **Matlab basics**
@@ -22,7 +23,7 @@ Danny Lasky, 2023
 - Keep arena directly under and all corners in view
 
 **Pipeline for analyzing tracking videos**
-- Enter the data in a similar way as Vince PatSep Trial Data 06-14-23 (ask Matt Jones for this if you don't have it)
+- Enter the data in an Excel spreadsheet in a similar way as Vince PatSep Trial Data 06-14-23 (ask Matt Jones for this if you don't have it)
 	- PatSep Trial Data 05-03-23 (Sophie's and Danny's experiments) should be almost exactly the same and can be used as a template
 	- Will need to have the EXACT same variable names at the top of the Excel sheet
 
