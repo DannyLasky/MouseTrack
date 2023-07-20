@@ -6,6 +6,14 @@ and how to use them correcty. Feel free to reach me at djlasky@ucdavis.edu or da
 
 Danny Lasky, 2023
 
+1. Something
+	1. Something
+    	2. Something
+2. Something
+
+
+
+
 **Matlab basics**
 - I strongly recommend taking Matlab Onramp, a free online 2-hour course, before using the script at all
 - I strongly recommend taking Matlab Fundamentals, a free online 16 hour course, before intending to make any significant changes to the script
