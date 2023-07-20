@@ -27,7 +27,7 @@ Danny Lasky, 2023
 	- PatSep Trial Data 05-03-23 (Sophie's and Danny's experiments) should be almost exactly the same and can be used as a template
 	- Will need to have the EXACT same variable names at the top of the Excel sheet
 
-1. Need to downsample the video (speeds up analysis significantly and has no loss of accuracy)
+**1. Need to downsample the video (speeds up analysis significantly and has no loss of accuracy)**
    1. Open MovieResize.m
    2. Change rows 3-8 to match your requirements (between CHANGE ME)
       - These select the file path to the video, the Excel sheet, and the Excel rows to analyze in the spreadsheet
