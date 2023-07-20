@@ -41,6 +41,7 @@ Danny Lasky, 2023
   3. Find the start frame to put in the Excel spreadsheet (arrow keys to go through frames, displayed in bottom right)
   4. End frame will be 2699 frames later (3 minutes at 15 fps = 2700 frames, but start and end frame both count, so subtract 1)
   5. Don't have any end frames where your hand/shadows enter into the arena. Shouldn't happen, but may have to pick an earlier end frame to avoid
+
 **3. Preparing the main script**
   1. Open Track_Master. This script will call the functions: Track_Coords and Track_Master
   2. Set the Excel name, Excel rows to be run, and directory pathes
@@ -53,10 +54,9 @@ Danny Lasky, 2023
 		If the wall length changes, it's important that it's changed in the script!
 
 **4. Running the main script**
-	1. CLOSE THE EXCEL SHEET (Otherwise output can not be saved there and you'll get an error)
-	2. If readCoords = 0, you will be prompted to set the coordinates. If readCoords = 1 it will read them directly from the spreadsheet (assuming
-		that they've been previously set, otherwise you'll get an error).
-	3. An important note here is VideoOrientation. Look back through Sophie and Vince videos to get an idea of what the Up/Side orientations mean. If
+  1. CLOSE THE EXCEL SHEET (Otherwise output can not be saved there and you'll get an error)
+  2. If readCoords = 0, you will be prompted to set the coordinates. If readCoords = 1 it will read them directly from the spreadsheet (assuming that they've been previously set, otherwise you'll get an error).
+  3. An important note here is VideoOrientation. Look back through Sophie and Vince videos to get an idea of what the Up/Side orientations mean. If
 		you have an orientation different than these you may have to rotate your videos or go into the TrackCoords script and change where it is
 		used (lines 120-140). It limits where you can say the objects are by knowing what options make sense with the video orientation
 	4. The script runs by creating a weighted background image (1/4 frames without a mouse, 3/4 frames with mouse throughout video and subtracting 
