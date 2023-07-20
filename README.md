@@ -27,35 +27,27 @@ Danny Lasky, 2023
 	- PatSep Trial Data 05-03-23 (Sophie's and Danny's experiments) should be almost exactly the same and can be used as a template
 	- Will need to have the EXACT same variable names at the top of the Excel sheet
 
-**1. Need to downsample the video (speeds up analysis significantly and has no loss of accuracy)**
-     1. Open MovieResize.m
-     2. Change rows 3-8 to match your requirements (between CHANGE ME)
-        - These select the file path to the video, the Excel sheet, and the Excel rows to analyze in the spreadsheet
-        - There is also a toggle to change the frame rate (1 is on, 0 is off) and what to set the frame rate to.
-        - Shrink factor reduces each video dimension by that amount. If shrink factor = 4, then 1920 x 1080 becomes 480 x 270
-     3. I recommend reducing videos to be 480 x 270 and 15 fps for faster analysis. Can view this by right clicking video > "Properties" > "Details"
+1. Need to downsample the video (speeds up analysis significantly and has no loss of accuracy)
+   1. Open MovieResize.m
+   2. Change rows 3-8 to match your requirements (between CHANGE ME)
+      - These select the file path to the video, the Excel sheet, and the Excel rows to analyze in the spreadsheet
+      - There is also a toggle to change the frame rate (1 is on, 0 is off) and what to set the frame rate to.
+      - Shrink factor reduces each video dimension by that amount. If shrink factor = 4, then 1920 x 1080 becomes 480 x 270
+   3. I recommend reducing videos to be 480 x 270 and 15 fps for faster analysis. Can view this by right clicking video > "Properties" > "Details"
 
+2. Select video start and end frames
+   1. In Matlab click the apps tab, open Video Viewer (under image processing and computer vision)
+   2. Open your REDUCED video in Video Viewer
+   3. Find the start frame to put in the Excel spreadsheet (arrow keys to go through frames, displayed in bottom right)
+   4. End frame will be 2699 frames later (3 minutes at 15 fps = 2700 frames, but start and end frame both count, so subtract 1)
+   5. Don't have any end frames where your hand/shadows enter into the arena. Shouldn't happen, but may have to pick an earlier end frame to avoid
 
-
-
-
-
-
-
-
-**2. Select video start and end frames**
-  1. In Matlab click the apps tab, open Video Viewer (under image processing and computer vision)
-  2. Open your REDUCED video in Video Viewer
-  3. Find the start frame to put in the Excel spreadsheet (arrow keys to go through frames, displayed in bottom right)
-  4. End frame will be 2699 frames later (3 minutes at 15 fps = 2700 frames, but start and end frame both count, so subtract 1)
-  5. Don't have any end frames where your hand/shadows enter into the arena. Shouldn't happen, but may have to pick an earlier end frame to avoid
-
-**3. Preparing the main script**
-  1. Open Track_Master. This script will call the functions: Track_Coords and Track_Master
-  2. Set the Excel name, Excel rows to be run, and directory pathes
-  3. Have readCoords = 0 if setting coordinates for the first time, otherwise have readCoords = 1 to read them in automatically
-  4. You can enter directory pathes for both Mac and PC and toggle onMac accordingly (1 = on a Mac, 0 = on a PC)
-  5. By default, the script saves the coordinates back to the Excel sheet, is expecting to work with a reduced video, has a object close
+3. Preparing the main script
+   1. Open Track_Master. This script will call the functions: Track_Coords and Track_Master
+   2. Set the Excel name, Excel rows to be run, and directory pathes
+   3. Have readCoords = 0 if setting coordinates for the first time, otherwise have readCoords = 1 to read them in automatically
+   4. You can enter directory pathes for both Mac and PC and toggle onMac accordingly (1 = on a Mac, 0 = on a PC)
+   5. By default, the script saves the coordinates back to the Excel sheet, is expecting to work with a reduced video, has a object close
 		threshold of 10 cm, and jump limiter of 50 (to keep the tracker on the mouse in bad situations), a wall length of 63 cm, and a
 		version number of 7. Feel free to change these as necessary and update the version number if you make changes, it will saved back
 		to the Excel sheet too, which helps you keep track of what version your data was run on. These variables actively affect others.
