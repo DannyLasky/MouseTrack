@@ -53,19 +53,19 @@ Danny Lasky, 2023
 		to the Excel sheet too, which helps you keep track of what version your data was run on. These variables actively affect others.
 		If the wall length changes, it's important that it's changed in the script!
 
-**4. Running the main script**
-  1. CLOSE THE EXCEL SHEET (Otherwise output can not be saved there and you'll get an error)
-  2. If readCoords = 0, you will be prompted to set the coordinates. If readCoords = 1 it will read them directly from the spreadsheet (assuming that they've been previously set, otherwise you'll get an error).
-  3. An important note here is VideoOrientation. Look back through Sophie and Vince videos to get an idea of what the Up/Side orientations mean. If
+4. Running the main script
+   1. CLOSE THE EXCEL SHEET (Otherwise output can not be saved there and you'll get an error)
+   2. If readCoords = 0, you will be prompted to set the coordinates. If readCoords = 1 it will read them directly from the spreadsheet (assuming that they've been previously set, otherwise you'll get an error).
+   3. An important note here is VideoOrientation. Look back through Sophie and Vince videos to get an idea of what the Up/Side orientations mean. If
 		you have an orientation different than these you may have to rotate your videos or go into the TrackCoords script and change where it is
 		used (lines 120-140). It limits where you can say the objects are by knowing what options make sense with the video orientation
-	4. The script runs by creating a weighted background image (1/4 frames without a mouse, 3/4 frames with mouse throughout video and subtracting 
+   4. The script runs by creating a weighted background image (1/4 frames without a mouse, 3/4 frames with mouse throughout video and subtracting 
 		that from each video frame to identify the biggest blob of difference, which should always be the mouse.
-	5. You should get a heatmap showing where the mouse spent time, a trajectory path of the mouse, a double-speed, low resolution video of the tracking,
+   5. You should get a heatmap showing where the mouse spent time, a trajectory path of the mouse, a double-speed, low resolution video of the tracking,
 		a statistics dashboard, and a Matlab output with statistics.
 
-**5. Creating group statisitics to compare treatments**
-	1. Can do this directly through Excel or by using the Tracking_Stats_Function. This was not written by me, but works well for viewing different
+5. Creating group statisitics to compare treatments
+   1. Can do this directly through Excel or by using the Tracking_Stats_Function. This was not written by me, but works well for viewing different
 		statisitcs like distance traveled and time near objects for your selected groups.
 
 Good Luck,
