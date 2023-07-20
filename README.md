@@ -42,12 +42,12 @@ Danny Lasky, 2023
   4. End frame will be 2699 frames later (3 minutes at 15 fps = 2700 frames, but start and end frame both count, so subtract 1)
   5. Don't have any end frames where your hand/shadows enter into the arena. Shouldn't happen, but may have to pick an earlier end frame to avoid
 
-**3. Preparing the main script**
-	1. Open Track_Master. This script will call the functions: Track_Coords and Track_Master
-	2. Set the Excel name, Excel rows to be run, and directory pathes
-	3. Have readCoords = 0 if setting coordinates for the first time, otherwise have readCoords = 1 to read them in automatically
-	4. You can enter directory pathes for both Mac and PC and toggle onMac accordingly (1 = on a Mac, 0 = on a PC)
-	5. By default, the script saves the coordinates back to the Excel sheet, is expecting to work with a reduced video, has a object close
+3. Preparing the main script
+  1. Open Track_Master. This script will call the functions: Track_Coords and Track_Master
+  2. Set the Excel name, Excel rows to be run, and directory pathes
+  3. Have readCoords = 0 if setting coordinates for the first time, otherwise have readCoords = 1 to read them in automatically
+  4. You can enter directory pathes for both Mac and PC and toggle onMac accordingly (1 = on a Mac, 0 = on a PC)
+  5. By default, the script saves the coordinates back to the Excel sheet, is expecting to work with a reduced video, has a object close
 		threshold of 10 cm, and jump limiter of 50 (to keep the tracker on the mouse in bad situations), a wall length of 63 cm, and a
 		version number of 7. Feel free to change these as necessary and update the version number if you make changes, it will saved back
 		to the Excel sheet too, which helps you keep track of what version your data was run on. These variables actively affect others.
