@@ -7,8 +7,8 @@ and how to use them correcty. Feel free to reach me at djlasky@ucdavis.edu or da
 Danny Lasky, 2023
 
 1. Something
-	1. Something
-    	2. Something
+   1. Something
+   2. Something
 2. Something
 
 
