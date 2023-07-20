@@ -41,8 +41,7 @@ Danny Lasky, 2023
   3. Find the start frame to put in the Excel spreadsheet (arrow keys to go through frames, displayed in bottom right)
   4. End frame will be 2699 frames later (3 minutes at 15 fps = 2700 frames, but start and end frame both count, so subtract 1)
   5. Don't have any end frames where your hand/shadows enter into the arena. Shouldn't happen, but may have to pick an earlier end frame to avoid
-
-3. Preparing the main script
+**3. Preparing the main script**
   1. Open Track_Master. This script will call the functions: Track_Coords and Track_Master
   2. Set the Excel name, Excel rows to be run, and directory pathes
   3. Have readCoords = 0 if setting coordinates for the first time, otherwise have readCoords = 1 to read them in automatically
