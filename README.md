@@ -66,7 +66,8 @@ Danny Lasky, 2023
 
 5. Creating group statistics to compare treatments
    1. The Track_GroupAnalysis script is set up to analyze all the different outputs and should be fairly straightforward to run.
-   2. You will need to calculate the discrimination ratios directly in Excel to be run through this script though. The formula for the simple and complex 			discrimination ratios can be found in the Vince PatSep Trial Data 06-14-23 spreadsheet. 
+   2. You will need to calculate the discrimination ratios directly in Excel to be run through this script though. Time is denoted as T. The simple ratio is 			Tmoved/Tunmoved. The complex ratio is Tmoved/(Tmoved+Tunmoved) - Ttobemoved/(Ttobemoved+Ttobeunmoved). The term before the minus sign is from phase 
+		3, the term after the minus sign is from phase 2.
 
 Good Luck,
 Danny
