@@ -1,6 +1,10 @@
 # MouseTrack
 ## Mouse tracking code developed in the Jones and Maganti Labs
 
+**The code requires the following toolboxes installed:**
+ - Image Processing Toolbox
+ - Computer Vision Toolbox
+ 
 Hello! Welcome to the README for the mouse tracking scripts. This will explain the expectations for data being read into these scripts
 and how to use them correctly. Feel free to reach me at djlasky@ucdavis.edu or dannyjlasky@gmail.com if you require necessary assistance.
 
